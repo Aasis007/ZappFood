@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Dfe3ee"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context="com.example.roshan.zappfood.Acitivities_Packages.Snacks">
+
+      <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_list_view"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+        android:divider="@android:color/transparent"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:overScrollMode="never"
+        />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="breakfast" type="id">Breakfast</item>
+    <item name="lunch" type="id">Lunch</item>
+    <item name="snacks" type="id">Snacks</item>
+    <item name="deserts" type="id">Deserts</item>
+    <item name="dinner" type="id">Dinner</item>
+    <item name="beverage" type="id">Beverage</item>
+    <item name="apetizer" type="id">Appetizers</item>
+    <item name="nepali_specialist" type="id">Nepali Specialities</item>
+    <item name="biryani" type="id">Biryani</item>
+    <item name="fast_food" type="id">Fast food</item>
+</resources>

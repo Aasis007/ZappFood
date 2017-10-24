@@ -1,0 +1,140 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPaddingBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="1dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/desert" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:background="#40B2EBF2"
+                android:id="@+id/nameBar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_item_name"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/orderingCard"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Hello World!"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_id"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_table_id"
+                    android:visibility="gone"
+                   />
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderingCard"
+                android:layout_below="@+id/avatar"
+                android:clickable="false"
+                app:cardBackgroundColor="#E1BEE7"
+                app:cardCornerRadius="1dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#Dfe3ee"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:id="@+id/orderLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/spinner"
+                            android:layout_weight="1"
+                            android:layout_marginTop="4dp">
+                        </Spinner>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:id="@+id/txt_foodPrice"/>
+                        <TextView
+                            android:id="@+id/foodPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/orderingCard"
+                            android:gravity="end"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="$ 256"
+                            android:layout_weight="3"
+                            android:textColor="@android:color/black"
+                            android:textSize="17dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderingCard"
+                android:layout_marginBottom="18dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textStyle="italic"
+                android:text="Here the description of the food will be displayed when we implement xml based data resource."
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+    <!--style="?android:buttonBarButtonStyle"-->
