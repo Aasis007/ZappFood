@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -46,7 +47,7 @@ import java.util.List;
 
 public class Appetizers extends AppCompatActivity {
     SharedPreferences sharedPreferences;
-    private ListView lv_item;
+    private GridView lv_item;
     private ProgressDialog dialog;
     private DbHandler mydb;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -71,7 +72,7 @@ public class Appetizers extends AppCompatActivity {
                 .defaultDisplayImageOptions(defaultOptions)
                 .build();
         ImageLoader.getInstance().init(config);
-        lv_item = (ListView)findViewById(R.id.detail_list_view);
+        lv_item = (GridView) findViewById(R.id.detail_list_view);
         Appetizers.this.setTitle("Appetizers");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

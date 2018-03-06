@@ -23,10 +23,6 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_contact_us"
-                android:icon="@drawable/phone_call"
-                android:title="Contact US" />
-            <item
                 android:id="@+id/nav_about_us"
                 android:icon="@drawable/ic_menu_send"
                 android:title="About Us" />

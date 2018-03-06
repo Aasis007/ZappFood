@@ -224,8 +224,8 @@ public class KhajaSet extends Fragment {
 
                     if (finalHolder.spinner1.getSelectedItemPosition()>0)
                     {
-                        int price=(Integer.parseInt(finalHolder.tvprice.getText().toString()));
-                        int subtotal=price *(finalHolder.spinner1.getSelectedItemPosition());
+                       float price=(Integer.parseInt(finalHolder.tvprice.getText().toString()));
+                      float subtotal=price *(finalHolder.spinner1.getSelectedItemPosition());
                         finalHolder.tv_subtotal.setText(String .format(String.valueOf(subtotal)));
                         mydb.insertData(finalHolder.tvName.getText().toString(), String.valueOf(subtotal), finalHolder.spinner1.getSelectedItemPosition(),finalHolder.txt_table_id.getText().toString());
                         //  mydb.updateData(finalHolder.tvName.getText().toString(),String.valueOf(subtotal),finalHolder.spinner1.getSelectedItemPosition());

@@ -1,11 +1,8 @@
 package com.example.roshan.zappfood;
 
-import android.content.pm.ActivityInfo;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.internal.NavigationMenuView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,15 +11,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.roshan.zappfood.ModelClass.DbHandler;
 import com.example.roshan.zappfood.Nav_Menu.About_Us;
 import com.example.roshan.zappfood.Nav_Menu.Cart;
-import com.example.roshan.zappfood.Nav_Menu.Contact_Us;
 import com.example.roshan.zappfood.Nav_Menu.Home;
-import com.example.roshan.zappfood.Nav_Menu.Online_Order;
 import com.example.roshan.zappfood.Nav_Menu.Order_Now;
 
 import static com.example.roshan.zappfood.ModelClass.DbHandler.table_name;
@@ -150,12 +144,6 @@ public class MainActivity extends AppCompatActivity
                             , new Order_Now())
                     .commit();
 
-        } else if (id == R.id.nav_order_online) {
-            getSupportActionBar().setTitle("Online Order");
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new Online_Order())
-                    .commit();
         }
        else if (id == R.id.nav_cart) {
             getSupportActionBar().setTitle("Cart");
@@ -164,13 +152,8 @@ public class MainActivity extends AppCompatActivity
                             , new Cart())
                     .commit();
         }
-        else if (id == R.id.nav_contact_us) {
-            getSupportActionBar().setTitle("Contact Us");
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new Contact_Us())
-                    .commit();
-        } else if (id == R.id.nav_about_us) {
+
+         else if (id == R.id.nav_about_us) {
             getSupportActionBar().setTitle("About Us");
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame

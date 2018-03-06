@@ -18,7 +18,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:layout_margin="10dp"
-            android:text="Kathford International College of Engineering and Management"
+            android:text="ZaapFood"
             />
         <View
             android:layout_width="match_parent"
@@ -29,11 +29,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="https://github.com/posakya/"
+            android:text="ZaapFood is a digital Emenu and ordering system that provides easy acess to the menu"
             android:textSize="20dp"
-            android:autoLink="web"
             />
-        <View
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Users can order their food right from the table and also get the bill in their own mobile phones"
+            android:textSize="20dp" />
+                    <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray"/>
@@ -51,7 +57,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile: 9860306332/9823000790"
+            android:text="Mobile: 9803267522/01-4781839"
             android:id="@+id/txt_mobile"
             android:textSize="20dp"
             android:autoLink="phone"
@@ -63,7 +69,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email: roshanposakya07@gmail.com"
+            android:text="Email: aasis0073@gmail.com"
             android:textColor="@color/colorAccent"
             android:textSize="20dp"
             android:id="@+id/txt_tel"

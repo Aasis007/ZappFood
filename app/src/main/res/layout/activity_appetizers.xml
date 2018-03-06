@@ -9,7 +9,9 @@
     android:orientation="vertical"
     tools:context="com.example.roshan.zappfood.Acitivities_Packages.Snacks">
 
-      <ListView
+      <GridView
+          android:numColumns="2"
+          android:verticalSpacing="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/detail_list_view"
